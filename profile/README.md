@@ -6,7 +6,15 @@
 <div align="center">
   AI 에이전트의 권한 경로를 시뮬레이션하는 Security Ontology 기반 디지털 트윈
 </div>
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/418ab2fa-9d61-4a4a-b2b3-33179e13bd5f" />
+<div align="center">
+  　
+</div>
+<div align="center">
+  
+<img width="800" height="450" alt="Animation1" src="https://github.com/user-attachments/assets/b71c7d31-0274-45aa-af09-3ef61e9206b3" />
+</div>
+
+
 
 
 ---
@@ -97,3 +105,6 @@ AgentSec Twin은 이 공백을 메우기 위해 다음 흐름으로 동작한다
 | AI / Explain | OpenAI-compatible API 연동 구조, 자연어 결과 요약 리포트 |
 | Infra / Tooling | npm workspace, Python virtualenv, Docker 기반 백엔드 실행 옵션 |
 ---
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/418ab2fa-9d61-4a4a-b2b3-33179e13bd5f" />
+
