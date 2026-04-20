@@ -14,11 +14,27 @@
 <img width="800" height="450" alt="Animation1" src="https://github.com/user-attachments/assets/b71c7d31-0274-45aa-af09-3ef61e9206b3" />
 </div>
 
+---
+## ✍️최신 프로젝트 내용 업데이트
+- 초기 기획안 대비 현재 구현 상태를 기준으로 제품 정의와 범위를 다음과 같이 조정했습니다.
+- 기획 변화 핵심 : AI 에이전트의 권한 시뮬레이터
+- → AI 에이전트와 MCP 운영 표면의 현재 상태를 관리하고, 외부 변화 신호를 수집하고, 시뮬레이션으로 보안 영향 범위를 검증하는 운영형 Twin 제품
 
-
+| 항목 | 기존 | 변경 |
+| --- | --- | --- |
+| 프로젝트 정의 | Security Ontology 기반 시뮬레이션 MVP | Twin 상태 관리 + Drift 모니터링 + Simulation 검증을 결합한 운영형 보안 디지털 트윈 |
+| 프로젝트 구조 | 사용자가 직접 시나리오를 실행하고 결과를 확인하는 구조 | `Verified Twin State`, `Claimed Change/Drift`, `Simulation + Diff + Evidence`를 함께 다루는 구조 |
+| 디지털 트윈 구성 | 온톨로지 기반 객체/관계 모델링 중심 | `Twin - Type Studio`(타입/관계 규칙)와 `Twin - Ontology Workbench`(인스턴스 그래프 편집)로 역할 분리 |
+| Agent Catalog | 에이전트만 관제하는 독립 기능 | 제거 후 다른 페이지에 흡수 |
+| 운영 | 정적 시나리오 분석 중심 | Overview에서 Drift Intelligence, watchlist, recent runs 기반 운영 모니터링 강화 |
+| 외부 변화 수집 | 향후 연동 후보 | Linear webhook 기반 issue/comment change event 수집 및 Drift 반영 |
+| AI 보조 기능 | 결과 설명 보조 | 전역 챗봇, 화면 컨텍스트 기반 질의와 일부 액션 제안/적용 지원 |
+| 상태 관리 | 단순 결과 확인 중심 | 워크스페이스 그래프 저장, 리비전 관리, audit event 기록 포함 |
+| 기술 스택 | Next.js + FastAPI + PostgreSQL 중심 | Next.js 16, React 19, FastAPI, SQLAlchemy, SQLite 기본, Docker Compose 기반으로 현재 구현에 맞게 조정 |
+| MVP 설명 | 보안 시뮬레이터 | 운영 변화 감지와 영향 검증까지 포함하는 관제형 디지털 트윈 제품 |
 
 ---
-## ✍️프로젝트 개요
+## ✍️초기 프로젝트 개요
 - 프로젝트명: AgentSec Twin
 - 프로젝트 기간 2026-04-01~2026-05-26
 - 핵심 목적: AI 에이전트 도입 전후의 보안 영향과 경로 변화를 시뮬레이션해 의사결정을 지원
